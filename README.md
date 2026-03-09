@@ -1,9 +1,19 @@
-mongosh 
+# Mongo
 
+##### mongosh 
+
+##### Download mongosh
+
+Linux
 ```
 sudo curl -O https://www.mongodb.com/try/download/shell && sudo dpkg -i mongodb-mongosh_2.7.0_amd64.deb 
 ```
+Mac
+```
+sudo curl -O https://downloads.mongodb.com/compass/mongosh-2.7.0-darwin-arm64.zip 
+```
 
+###### Подключение к БД
 ```
 mongosh "mongodb://admin:secret@localhost:27017/?authSource=admin"
 ```
@@ -14,7 +24,6 @@ mongosh "mongodb://admin:secret@localhost:27017/?authSource=admin"
 ```
 use test_db_name
 ```
-
 
 Для просмотра коллекций
 
@@ -132,5 +141,27 @@ ModerationQueue
 SupportTickets
 UserRecommendations
 UserSessions
+```
+
+
+# Airflow
+
+##### Cnnections
+
+```
+Connection Id: mongo-db
+Connection Type: MongoDB
+Description: -
+Host: c56b9c146dec(ID docker_container)
+Default DB: replica_db
+Username: admin
+Password: secret
+Port: 27017
+Extra: {
+  "authSource": "admin",
+  "srv": false,
+  "ssl": false,
+  "allow_insecure": false
+}
 ```
 

@@ -16,6 +16,7 @@ import json
 import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy import text
+from airflow.providers.mongo.hooks.mongo import MongoHook
 
 # Конфигурация DAG
 OWNER = "a.sorokin"
@@ -23,17 +24,28 @@ DAG_ID = "replica_mongo_to_postgresql"
 
 
 SHORT_DESCRIPTION = "DAG для реплики данных из MongoDB в Postgresql"
-
+LONG_DESCRIPTION = """ 123 """
 
 args = {
     "owner": OWNER,
-    "start_date": pendulum.datetime(year=2026, month=1, day=30),
+    "start_date": pendulum.datetime(year=2026, month=2, day=7),
     "retries": 3,
     "depends_on_past": False
 }
 
+def check_connect_to_Mongo():
+    hook = MongoHook(mongo_conn_id='mongo-db')
+    try:
+        client = hook.get_conn()
+        client.server_info()
+        print("Сервер ответил")
+        return True
+    except Exception as e:
+        print("Сервер не ответил")
+        return False
 
-def check_connect_to_DB():
+
+def check_connect_to_Postgres():
     hook = PostgresHook(postgres_conn_id="postgres-db")
 
     status, msg = hook.test_connection()
@@ -76,25 +88,29 @@ with DAG(
         task_id = "end"
     )
 
-    check_parse = ExternalTaskSensor(
-        task_id="check_parse",
-        external_dag_id="parse_iot",
-        mode="reschedule",
-        poke_interval=60,
-        timeout=3600
+#    check_parse = ExternalTaskSensor(
+#        task_id="check_parse",
+#        external_dag_id="parse_iot",
+#        mode="reschedule",
+#        poke_interval=60,
+#        timeout=3600
+#    )
+
+#    check_connect_to_Postgres = PythonSensor(
+#        task_id="check_connect_to_Postgres",
+#        python_callable=check_connect_to_Postgres
+#    )
+
+    check_connect_to_Mongo = PythonSensor(
+        task_id="check_connect_to_Mongo",
+				python_callable=check_connect_to_Mongo
     )
 
-    check_connect_to_DB = PythonSensor(
-        task_id="check_connect_to_DB",
-        python_callable=check_connect_to_DB
-    )
 
+#    load_csv_to_postgres = PythonOperator(
+#        task_id="load_csv_to_postgres",
+#        python_callable=load_csv_to_postgres
+#    )
 
-
-    load_csv_to_postgres = PythonOperator(
-        task_id="load_csv_to_postgres",
-        python_callable=load_csv_to_postgres
-    )
-
-start >>  check_parse >> check_connect_to_DB >> load_csv_to_postgres >> end
+start >> check_connect_to_Mongo >> end
 
