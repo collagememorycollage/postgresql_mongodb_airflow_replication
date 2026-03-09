@@ -37,11 +37,12 @@ services:
     image: postgres:16
     restart: always
     environment:
-      POSTGRES_PASSWORD: postgresql 
-      POSTGRES_USER: postgresql 
-      POSTGRES_DB: postgresql 
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres 
     volumes:
       - db_data:/var/lib/postgresql/data 
+      - ./init-postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - "5400:5432" 
     networks:
