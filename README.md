@@ -1,47 +1,41 @@
-# Mongo
+# Работа с MongoDB (mongosh)
 
-##### mongosh 
+### Установка и подключение
 
-##### Download mongosh
 
-Linux
+**Linux**
 ```
-sudo curl -O https://www.mongodb.com/try/download/shell && sudo dpkg -i mongodb-mongosh_2.7.0_amd64.deb 
+sudo curl -O https://www.mongodb.com && sudo dpkg -i mongodb-mongosh_2.7.0_amd64.deb
 ```
-Mac
+
+**Mac**
 ```
 sudo curl -O https://downloads.mongodb.com/compass/mongosh-2.7.0-darwin-arm64.zip 
 ```
 
-###### Подключение к БД
+**Подключение**
 ```
 mongosh "mongodb://admin:secret@localhost:27017/?authSource=admin"
 ```
 
-
-Для использования BD 
-
+**Базовые команды**
 ```
-use test_db_name
-```
-
-Для просмотра коллекций
-
-```
+use replica_db
 show collections
 ```
 
+
 ##### База данных создается из файла /init-mongo/init.js
 
-1. UserSessions, сессии пользователей:
- session_id — уникальный идентификатор сессии;
- user_id — идентификатор пользователя;
- start_time — время начала сессии;
- end_time — время завершения сессии;
- pages_visited — массив посещённых страниц;
- device — информация об устройстве;
- actions — массив действий пользователя.
-
+#### 1. UserSessions, сессии пользователей:
+- **session_id** — уникальный идентификатор сессии;
+- **user_id** — идентификатор пользователя;
+- **start_time** — время начала сессии;
+- **end_time** — время завершения сессии;
+- **pages_visited** — массив посещённых страниц;
+- **device** — информация об устройстве;
+- **actions** — массив действий пользователя.
+```
 {
     "session_id": "sess_001",
     "user_id": "user_123",
@@ -51,7 +45,7 @@ show collections
     "device": {"mobile"},
     "actions": ["login", "view_product", "add_to_cart", "logout"]
 }
-
+```
 
 2. EventLogs, логи событий:
  event_id — уникальный идентификатор события;
@@ -143,39 +137,3 @@ UserRecommendations
 UserSessions
 ```
 
-
-# Airflow
-
-##### Cnnections
-
-
-##### MongoDB
-```
-Connection Id: mongo-db
-Connection Type: MongoDB
-Description: -
-Host: c56b9c146dec(ID docker_container)
-Default DB: replica_db
-Username: admin
-Password: secret
-Port: 27017
-Extra: {
-  "authSource": "admin",
-  "srv": false,
-  "ssl": false,
-  "allow_insecure": false
-}
-```
-
-##### Postgresql
-
-```
-Connection Id: postgres-db
-Connection Type: Postgres
-Description: -
-Host: c2dad9acee56
-Database: postgres
-Login: postgres
-Password: postgres
-Port: 5432
-```
