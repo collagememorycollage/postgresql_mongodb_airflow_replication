@@ -108,3 +108,29 @@ AttributeError: 'MongoHook' object has no attribute 'test_connection'
 [2026-03-09T20:04:00.824+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
 [2026-03-09T20:04:00.832+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
 [2026-03-09T20:04:00.833+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2026-03-10T00:51:27.339+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-03-10T00:51:27.346+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: replica_mongo_to_postgresql.check_connect_to_Mongo scheduled__2026-02-27T10:00:00+00:00 [queued]>
+[2026-03-10T00:51:27.349+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: replica_mongo_to_postgresql.check_connect_to_Mongo scheduled__2026-02-27T10:00:00+00:00 [queued]>
+[2026-03-10T00:51:27.349+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 4
+[2026-03-10T00:51:27.353+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonSensor): check_connect_to_Mongo> on 2026-02-27 10:00:00+00:00
+[2026-03-10T00:51:27.355+0000] {standard_task_runner.py:72} INFO - Started process 330 to run task
+[2026-03-10T00:51:27.357+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'replica_mongo_to_postgresql', 'check_connect_to_Mongo', 'scheduled__2026-02-27T10:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/replica_mongo_to_postgres.py', '--cfg-path', '/tmp/tmpjtq83_d1']
+[2026-03-10T00:51:27.358+0000] {standard_task_runner.py:105} INFO - Job 39: Subtask check_connect_to_Mongo
+[2026-03-10T00:51:27.365+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-03-10T00:51:27.378+0000] {task_command.py:467} INFO - Running <TaskInstance: replica_mongo_to_postgresql.check_connect_to_Mongo scheduled__2026-02-27T10:00:00+00:00 [running]> on host 4b5206882624
+[2026-03-10T00:51:27.378+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-03-10T00:51:27.408+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='replica_mongo_to_postgresql' AIRFLOW_CTX_TASK_ID='check_connect_to_Mongo' AIRFLOW_CTX_EXECUTION_DATE='2026-02-27T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-27T10:00:00+00:00'
+[2026-03-10T00:51:27.409+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-03-10T00:51:27.413+0000] {python.py:75} INFO - Poking callable: <function check_connect_to_Mongo at 0xffff82425310>
+[2026-03-10T00:51:27.418+0000] {base.py:84} INFO - Retrieving connection 'mongo-db'
+[2026-03-10T00:51:27.429+0000] {logging_mixin.py:190} INFO - Сервер ответил
+[2026-03-10T00:51:27.429+0000] {base.py:339} INFO - Success criteria met. Exiting.
+[2026-03-10T00:51:27.433+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-03-10T00:51:27.433+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=replica_mongo_to_postgresql, task_id=check_connect_to_Mongo, run_id=scheduled__2026-02-27T10:00:00+00:00, execution_date=20260227T100000, start_date=20260310T005127, end_date=20260310T005127
+[2026-03-10T00:51:27.453+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-03-10T00:51:27.464+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T00:51:27.465+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

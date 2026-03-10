@@ -1,7 +1,7 @@
 import logging
 import pendulum
 import kagglehub
-
+from psycopg2.extras import Json, execute_batch
 
 from airflow import DAG
 
@@ -44,6 +44,155 @@ def check_connect_to_Mongo():
         print("Сервер не ответил")
         return False
 
+def mongo_to_postgres():
+    mongo_hook = MongoHook(mongo_conn_id='mongo-db')
+    postgres_hook = PostgresHook(postgres_conn_id='postgres-db')
+
+    mongo_client = mongo_hook.get_conn()
+    db = mongo_client["replica_db"]
+    
+    pg_conn = postgres_hook.get_conn()
+    cursor = pg_conn.cursor()
+
+    # -------------------------
+    # UserSessions
+    # -------------------------
+    rows = []
+    for doc in db["UserSessions"].find():
+        rows.append((
+            str(doc["_id"]),
+            doc.get("user_id"),
+            doc.get("start_time"),
+            doc.get("end_time"),
+            Json(doc.get("pages_visited", {})),
+            Json(doc.get("device", {})),
+            doc.get("actions", [])
+        ))
+
+    execute_batch(cursor, """
+        INSERT INTO UserSessions (
+                        session_id,
+                        user_id,
+                        start_time,
+                        end_time,
+                        pages_visited,
+                        device,actions
+        )
+        VALUES (%s,%s,%s,%s,%s,%s,%s)
+        ON CONFLICT (session_id) DO NOTHING
+    """, rows)
+    pg_conn.commit()
+
+
+    # -------------------------
+    # EventLogs
+    # -------------------------
+    rows = []
+    for doc in db["EventLogs"].find():
+        rows.append((
+            str(doc["_id"]),
+            doc.get("timestamp"),
+            doc.get("event_type"),
+            Json(doc.get("details", {}))
+        ))
+
+    execute_batch(cursor, """
+        INSERT INTO EventLogs (
+            event_id,timestamp,event_type,details
+        )
+        VALUES (%s,%s,%s,%s)
+        ON CONFLICT (event_id) DO NOTHING
+    """, rows)
+
+    pg_conn.commit()
+
+    # -------------------------
+    # SupportTickets
+    # -------------------------
+    rows = []
+    for doc in db["SupportTickets"].find():
+        rows.append((
+            str(doc["_id"]),
+            doc.get("user_id"),
+            doc.get("status"),
+            doc.get("issue_type"),
+            Json(doc.get("message", {})),
+            doc.get("created_at"),
+            doc.get("updated_at")
+        ))
+
+    execute_batch(cursor, """
+        INSERT INTO SupportTickets (
+                    ticket_id,
+                    user_id,
+                    status,
+                    issue_type,
+                    message,
+                    created_at,
+                    updated_at
+        )
+        VALUES (%s,%s,%s,%s,%s,%s,%s)
+        ON CONFLICT (ticket_id) DO NOTHING
+    """, rows)
+    
+    pg_conn.commit()
+
+    # -------------------------
+    # UserRecommendations
+    # -------------------------
+    rows = []
+    for doc in db["UserRecommendations"].find():
+        rows.append((
+            doc.get("user_id"),
+            doc.get("last_updated"),
+            doc.get("recommended_products", [])
+        ))
+
+    execute_batch(cursor, """
+        INSERT INTO UserRecommendations (
+                        user_id,
+                        last_updated,
+                        recommended_products
+        )
+        VALUES (%s,%s,%s)
+        ON CONFLICT (user_id) DO NOTHING
+    """, rows)
+
+    pg_conn.commit()
+
+    # -------------------------
+    # ModerationQueue
+    # -------------------------
+    rows = []
+    for doc in db["ModerationQueue"].find():
+        rows.append((
+            str(doc["_id"]),
+            doc.get("user_id"),
+            doc.get("product_id"),
+            doc.get("review_text"),
+            doc.get("rating"),
+            doc.get("moderation_status"),
+            doc.get("flags", []),
+            doc.get("submitted_at")
+        ))
+
+    execute_batch(cursor, """
+        INSERT INTO ModerationQueue (
+                    review_id,
+                    user_id,
+                    product_id,
+                    review_text,
+                    rating,
+                    moderation_status,
+                    flags,
+                    submitted_at
+        )
+        VALUES (%s,%s,%s,%s,%s,%s,%s,%s)
+        ON CONFLICT (review_id) DO NOTHING
+    """, rows)
+    pg_conn.commit()
+    cursor.close()
+    
 
 def check_connect_to_Postgres():
     hook = PostgresHook(postgres_conn_id="postgres-db")
@@ -87,23 +236,15 @@ with DAG(
     end = EmptyOperator(
         task_id = "end"
     )
-
-#    check_parse = ExternalTaskSensor(
-#        task_id="check_parse",
-#        external_dag_id="parse_iot",
-#        mode="reschedule",
-#        poke_interval=60,
-#        timeout=3600
-#    )
-
-#    check_connect_to_Postgres = PythonSensor(
-#        task_id="check_connect_to_Postgres",
-#        python_callable=check_connect_to_Postgres
-#    )
-
+    
     check_connect_to_Mongo = PythonSensor(
         task_id="check_connect_to_Mongo",
 				python_callable=check_connect_to_Mongo
+    )
+
+    mongo_to_postgres = PythonOperator(
+        task_id="mongo_to_postgres",
+        python_callable=mongo_to_postgres
     )
 
 
@@ -112,5 +253,5 @@ with DAG(
 #        python_callable=load_csv_to_postgres
 #    )
 
-start >> check_connect_to_Mongo >> end
+start >> check_connect_to_Mongo >> mongo_to_postgres >> end
 

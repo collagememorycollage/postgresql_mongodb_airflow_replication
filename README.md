@@ -148,6 +148,8 @@ UserSessions
 
 ##### Cnnections
 
+
+##### MongoDB
 ```
 Connection Id: mongo-db
 Connection Type: MongoDB
@@ -165,3 +167,15 @@ Extra: {
 }
 ```
 
+##### Postgresql
+
+```
+Connection Id: postgres-db
+Connection Type: Postgres
+Description: -
+Host: c2dad9acee56
+Database: postgres
+Login: postgres
+Password: postgres
+Port: 5432
+```

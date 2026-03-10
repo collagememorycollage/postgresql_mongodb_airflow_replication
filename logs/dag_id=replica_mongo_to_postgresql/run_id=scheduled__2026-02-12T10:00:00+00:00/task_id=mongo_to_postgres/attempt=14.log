@@ -1,0 +1,49 @@
+[2026-03-09T23:30:35.686+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-03-09T23:30:35.694+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: replica_mongo_to_postgresql.mongo_to_postgres scheduled__2026-02-12T10:00:00+00:00 [queued]>
+[2026-03-09T23:30:35.697+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: replica_mongo_to_postgresql.mongo_to_postgres scheduled__2026-02-12T10:00:00+00:00 [queued]>
+[2026-03-09T23:30:35.697+0000] {taskinstance.py:2867} INFO - Starting attempt 14 of 17
+[2026-03-09T23:30:35.700+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): mongo_to_postgres> on 2026-02-12 10:00:00+00:00
+[2026-03-09T23:30:35.703+0000] {standard_task_runner.py:72} INFO - Started process 785 to run task
+[2026-03-09T23:30:35.705+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'replica_mongo_to_postgresql', 'mongo_to_postgres', 'scheduled__2026-02-12T10:00:00+00:00', '--job-id', '133', '--raw', '--subdir', 'DAGS_FOLDER/replica_mongo_to_postgres.py', '--cfg-path', '/tmp/tmpre_3a4k1']
+[2026-03-09T23:30:35.707+0000] {standard_task_runner.py:105} INFO - Job 133: Subtask mongo_to_postgres
+[2026-03-09T23:30:35.714+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-03-09T23:30:35.730+0000] {task_command.py:467} INFO - Running <TaskInstance: replica_mongo_to_postgresql.mongo_to_postgres scheduled__2026-02-12T10:00:00+00:00 [running]> on host 6186f28317bc
+[2026-03-09T23:30:35.730+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-03-09T23:30:35.769+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='replica_mongo_to_postgresql' AIRFLOW_CTX_TASK_ID='mongo_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2026-02-12T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='14' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-12T10:00:00+00:00'
+[2026-03-09T23:30:35.769+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-03-09T23:30:35.781+0000] {base.py:84} INFO - Retrieving connection 'mongo-db'
+[2026-03-09T23:30:35.796+0000] {logging_mixin.py:190} INFO - Данные из коллекции Collection(Database(MongoClient(host=['c56b9c146dec:27017'], document_class=dict, tz_aware=False, connect=True, authsource='admin', tls=False), 'replica_db'), 'EventLogs'):
+[2026-03-09T23:30:35.800+0000] {logging_mixin.py:190} INFO -                         _id  event_id  ... event_type                   details
+0  69af16c9f54065dd89591668  evt_1001  ...      click  {'page': '/products/42'}
+
+[1 rows x 5 columns]
+[2026-03-09T23:30:35.801+0000] {logging_mixin.py:190} INFO - Данные из коллекции Collection(Database(MongoClient(host=['c56b9c146dec:27017'], document_class=dict, tz_aware=False, connect=True, authsource='admin', tls=False), 'replica_db'), 'ModerationQueue'):
+[2026-03-09T23:30:35.803+0000] {logging_mixin.py:190} INFO -                         _id review_id  ...              flags          submitted_at
+0  69af16c9f54065dd8959166b   rev_555  ...  [contains_images]  2024-01-08T10:20:00Z
+
+[1 rows x 9 columns]
+[2026-03-09T23:30:35.804+0000] {logging_mixin.py:190} INFO - Данные из коллекции Collection(Database(MongoClient(host=['c56b9c146dec:27017'], document_class=dict, tz_aware=False, connect=True, authsource='admin', tls=False), 'replica_db'), 'SupportTickets'):
+[2026-03-09T23:30:35.806+0000] {logging_mixin.py:190} INFO -                         _id  ...            updated_at
+0  69af16c9f54065dd89591669  ...  2024-01-09T13:00:00Z
+
+[1 rows x 8 columns]
+[2026-03-09T23:30:35.806+0000] {logging_mixin.py:190} INFO - Данные из коллекции Collection(Database(MongoClient(host=['c56b9c146dec:27017'], document_class=dict, tz_aware=False, connect=True, authsource='admin', tls=False), 'replica_db'), 'UserRecommendations'):
+[2026-03-09T23:30:35.808+0000] {logging_mixin.py:190} INFO -                         _id  ...          last_updated
+0  69af16c9f54065dd8959166a  ...  2024-01-10T08:00:00Z
+
+[1 rows x 4 columns]
+[2026-03-09T23:30:35.808+0000] {logging_mixin.py:190} INFO - Данные из коллекции Collection(Database(MongoClient(host=['c56b9c146dec:27017'], document_class=dict, tz_aware=False, connect=True, authsource='admin', tls=False), 'replica_db'), 'UserSessions'):
+[2026-03-09T23:30:35.810+0000] {logging_mixin.py:190} INFO -                         _id  ...                                     actions
+0  69af16c9f54065dd89591667  ...  [login, view_product, add_to_cart, logout]
+
+[1 rows x 8 columns]
+[2026-03-09T23:30:35.810+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-03-09T23:30:35.814+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-03-09T23:30:35.815+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=replica_mongo_to_postgresql, task_id=mongo_to_postgres, run_id=scheduled__2026-02-12T10:00:00+00:00, execution_date=20260212T100000, start_date=20260309T233035, end_date=20260309T233035
+[2026-03-09T23:30:35.846+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-03-09T23:30:35.855+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-09T23:30:35.855+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

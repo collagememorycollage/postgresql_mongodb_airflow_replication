@@ -22,8 +22,8 @@ CREATE TABLE SupportTickets (
 	status TEXT NOT NULL,
 	issue_type TEXT,
 	message JSONB,
-	cerated_at TIMESTAMPTZ NOT NULL,
-	updated_ad TIMESTAMPTZ
+	created_at TIMESTAMPTZ NOT NULL,
+	updated_at TIMESTAMPTZ
 );
 
 CREATE TABLE UserRecommendations (

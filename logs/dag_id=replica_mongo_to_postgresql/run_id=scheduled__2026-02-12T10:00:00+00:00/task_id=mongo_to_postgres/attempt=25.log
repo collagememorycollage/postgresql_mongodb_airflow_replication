@@ -1,0 +1,25 @@
+[2026-03-10T00:04:53.971+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-03-10T00:04:53.978+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: replica_mongo_to_postgresql.mongo_to_postgres scheduled__2026-02-12T10:00:00+00:00 [queued]>
+[2026-03-10T00:04:53.981+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: replica_mongo_to_postgresql.mongo_to_postgres scheduled__2026-02-12T10:00:00+00:00 [queued]>
+[2026-03-10T00:04:53.981+0000] {taskinstance.py:2867} INFO - Starting attempt 25 of 28
+[2026-03-10T00:04:53.985+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): mongo_to_postgres> on 2026-02-12 10:00:00+00:00
+[2026-03-10T00:04:53.988+0000] {standard_task_runner.py:72} INFO - Started process 910 to run task
+[2026-03-10T00:04:53.990+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'replica_mongo_to_postgresql', 'mongo_to_postgres', 'scheduled__2026-02-12T10:00:00+00:00', '--job-id', '151', '--raw', '--subdir', 'DAGS_FOLDER/replica_mongo_to_postgres.py', '--cfg-path', '/tmp/tmpaqhyc0hv']
+[2026-03-10T00:04:53.992+0000] {standard_task_runner.py:105} INFO - Job 151: Subtask mongo_to_postgres
+[2026-03-10T00:04:54.000+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:209: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2026-03-10T00:04:54.016+0000] {task_command.py:467} INFO - Running <TaskInstance: replica_mongo_to_postgresql.mongo_to_postgres scheduled__2026-02-12T10:00:00+00:00 [running]> on host 6186f28317bc
+[2026-03-10T00:04:54.017+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.9/site-packages/***/settings.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  if conf.get("database", "sql_alchemy_conn") == "none://":
+
+[2026-03-10T00:04:54.050+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='a.sorokin' AIRFLOW_CTX_DAG_ID='replica_mongo_to_postgresql' AIRFLOW_CTX_TASK_ID='mongo_to_postgres' AIRFLOW_CTX_EXECUTION_DATE='2026-02-12T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='25' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-02-12T10:00:00+00:00'
+[2026-03-10T00:04:54.050+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2026-03-10T00:04:54.063+0000] {base.py:84} INFO - Retrieving connection 'mongo-db'
+[2026-03-10T00:04:54.076+0000] {base.py:84} INFO - Retrieving connection '***-db'
+[2026-03-10T00:04:54.090+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-03-10T00:04:54.094+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2026-03-10T00:04:54.095+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=replica_mongo_to_***ql, task_id=mongo_to_***, run_id=scheduled__2026-02-12T10:00:00+00:00, execution_date=20260212T100000, start_date=20260310T000453, end_date=20260310T000454
+[2026-03-10T00:04:54.132+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-03-10T00:04:54.140+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-03-10T00:04:54.141+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
