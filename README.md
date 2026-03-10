@@ -164,5 +164,29 @@ Extra:
     }
 ```
 
+# Витрины данных 
+
+##### Витрина активности пользователей
+
+```
+CREATE MATERIALIZED VIEW mart_daily_user_activity AS
+SELECT 
+    user_id,
+    date_trunc('day', start_time) as activity_date,
+    device->>'type' as device_type,
+    COUNT(session_id) as total_sessions,
+    ROUND(SUM(EXTRACT(EPOCH FROM (end_time - start_time)) / 60)) AS total_minutes_online,
+        (SELECT COUNT(DISTINCT p)
+        FROM jsonb_array_elements_text(pages_visited) AS p
+        ) AS unique_pages_count,
+    CASE WHEN 'add_to_cart' = ANY(actions) THEN 1 ELSE 0 END AS converted
+FROM usersessions
+GROUP BY session_id, activity_date, device_type
+WITH DATA;
+```
+##### DAG для обновления витрины 
+
+
+
 
 
