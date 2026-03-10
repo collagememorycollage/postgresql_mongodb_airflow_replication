@@ -1,4 +1,9 @@
-# Работа с MongoDB (mongosh)
+# MongoDB to Postgresql
+
+##### База данных MongoDB создается из файла /init-mongo/init.js
+##### База данных Postgresql создается из файла /init-postgresql/init.sql
+
+### Работа с MongoDB (mongosh)
 
 ### Установка и подключение
 
@@ -23,9 +28,6 @@ mongosh "mongodb://admin:secret@localhost:27017/?authSource=admin"
 use replica_db
 show collections
 ```
-
-
-##### База данных создается из файла /init-mongo/init.js
 
 #### 1. UserSessions, сессии пользователей:
 - **session_id** — уникальный идентификатор сессии;
@@ -129,5 +131,38 @@ show collections
     "submitted_at": "2024-01-08T10:20:00Z"
 }
 ```
+# Connections
+
+##### Postgresql
+```
+Connection Id: postgres-db
+Connection Type: Postgres
+Description: -
+Host: c2dad9acee56(docker-id-container)
+Database: postgres
+Login: postgres
+Password: postgres
+Port: 5432
+```
+
+##### MongoDB
+```
+Connection Id: mongo-db
+Connection Type: MongoDB
+Description: -
+Host: beb24aaac85f(docker-id-container)
+Default DB: replica_db
+Username: admin
+Password: secret
+Port: 27017
+Extra: 
+    {
+        "authSource": "admin",
+        "srv": false,
+        "ssl": false,
+        "allow_insecure": false
+    }
+```
+
 
 

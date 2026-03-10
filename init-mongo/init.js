@@ -57,4 +57,3 @@ db.ModerationQueue.insertOne({
   "submitted_at": "2024-01-08T10:20:00Z"
 });
 
-print("✅ All collections have been created in replica_db!");

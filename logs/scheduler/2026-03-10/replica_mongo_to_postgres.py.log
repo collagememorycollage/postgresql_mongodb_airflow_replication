@@ -914,3 +914,220 @@
 [2026-03-10T01:28:35.316+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:28:35.316+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-03-10T01:28:35.326+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:28:35.325+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
 [2026-03-10T01:28:35.332+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.321 seconds
+[2026-03-10T01:29:05.459+0000] {processor.py:186} INFO - Started process (PID=218) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:29:05.460+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:29:05.462+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:29:05.462+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:29:05.636+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:29:05.645+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:29:05.644+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:29:05.653+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:29:05.652+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:29:05.658+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.208 seconds
+[2026-03-10T01:29:36.097+0000] {processor.py:186} INFO - Started process (PID=220) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:29:36.098+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:29:36.100+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:29:36.100+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:29:36.343+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:29:36.357+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:29:36.357+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:29:36.365+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:29:36.365+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:29:36.371+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.281 seconds
+[2026-03-10T01:30:06.500+0000] {processor.py:186} INFO - Started process (PID=222) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:30:06.501+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:30:06.503+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:30:06.502+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:30:06.734+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:30:06.743+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:30:06.743+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:30:06.751+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:30:06.751+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:30:06.756+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.263 seconds
+[2026-03-10T01:30:37.039+0000] {processor.py:186} INFO - Started process (PID=224) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:30:37.040+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:30:37.042+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:30:37.042+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:30:37.233+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:30:37.241+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:30:37.240+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:30:37.247+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:30:37.247+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:30:37.252+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.219 seconds
+[2026-03-10T01:31:07.405+0000] {processor.py:186} INFO - Started process (PID=226) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:31:07.405+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:31:07.407+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:31:07.407+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:31:07.565+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:31:07.573+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:31:07.573+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:31:07.580+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:31:07.580+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:31:07.585+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.186 seconds
+[2026-03-10T01:31:37.985+0000] {processor.py:186} INFO - Started process (PID=228) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:31:37.987+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:31:37.991+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:31:37.990+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:31:38.235+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:31:38.245+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:31:38.245+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:31:38.253+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:31:38.253+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:31:38.259+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.284 seconds
+[2026-03-10T01:32:08.365+0000] {processor.py:186} INFO - Started process (PID=230) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:32:08.366+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:32:08.367+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:32:08.367+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:32:08.530+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:32:08.537+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:32:08.537+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:32:08.543+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:32:08.543+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:32:08.549+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.190 seconds
+[2026-03-10T01:32:38.895+0000] {processor.py:186} INFO - Started process (PID=232) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:32:38.896+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:32:38.898+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:32:38.897+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:32:39.063+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:32:39.074+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:32:39.073+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:32:39.083+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:32:39.083+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:32:39.089+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.200 seconds
+[2026-03-10T01:33:09.263+0000] {processor.py:186} INFO - Started process (PID=234) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:33:09.263+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:33:09.266+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:33:09.265+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:33:09.475+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:33:09.484+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:33:09.484+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:33:09.492+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:33:09.491+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:33:09.497+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.241 seconds
+[2026-03-10T01:33:39.717+0000] {processor.py:186} INFO - Started process (PID=236) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:33:39.718+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:33:39.720+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:33:39.719+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:33:39.918+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:33:39.927+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:33:39.926+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:33:39.934+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:33:39.934+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:33:39.940+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.230 seconds
+[2026-03-10T01:34:10.211+0000] {processor.py:186} INFO - Started process (PID=238) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:34:10.213+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:34:10.223+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:34:10.223+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:34:10.515+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:34:10.528+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:34:10.528+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:34:10.537+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:34:10.537+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:34:10.543+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.352 seconds
+[2026-03-10T01:34:40.635+0000] {processor.py:186} INFO - Started process (PID=240) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:34:40.635+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:34:40.638+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:34:40.638+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:34:40.828+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:34:40.837+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:34:40.837+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:34:40.845+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:34:40.845+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:34:40.850+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.224 seconds
+[2026-03-10T01:35:11.199+0000] {processor.py:186} INFO - Started process (PID=242) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:35:11.200+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:35:11.201+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:35:11.201+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:35:11.405+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:35:11.414+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:35:11.413+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:35:11.421+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:35:11.421+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:35:11.426+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.233 seconds
+[2026-03-10T01:35:41.496+0000] {processor.py:186} INFO - Started process (PID=244) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:35:41.496+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:35:41.497+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:35:41.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:35:41.659+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:35:41.667+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:35:41.667+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:35:41.674+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:35:41.674+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:35:41.679+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.188 seconds
+[2026-03-10T01:36:11.835+0000] {processor.py:186} INFO - Started process (PID=246) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:36:11.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:36:11.839+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:36:11.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:36:12.101+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:36:12.112+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:36:12.112+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:36:12.120+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:36:12.120+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:36:12.126+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.299 seconds
+[2026-03-10T01:36:42.296+0000] {processor.py:186} INFO - Started process (PID=248) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:36:42.297+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:36:42.298+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:36:42.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:36:42.526+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:36:42.537+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:36:42.537+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:36:42.546+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:36:42.545+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:36:42.551+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.260 seconds
+[2026-03-10T01:37:12.836+0000] {processor.py:186} INFO - Started process (PID=250) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:37:12.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:37:12.839+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:37:12.839+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:37:13.004+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:37:13.012+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:37:13.012+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:37:13.019+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:37:13.019+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:37:13.024+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.194 seconds
+[2026-03-10T01:37:43.234+0000] {processor.py:186} INFO - Started process (PID=252) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:37:43.236+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:37:43.240+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:37:43.239+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:37:43.517+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:37:43.528+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:37:43.528+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:37:43.541+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:37:43.540+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:37:43.546+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.320 seconds
+[2026-03-10T01:38:13.702+0000] {processor.py:186} INFO - Started process (PID=254) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:38:13.703+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:38:13.707+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:38:13.707+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:38:13.957+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:38:13.969+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:38:13.969+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:38:13.977+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:38:13.977+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:38:13.983+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.291 seconds
+[2026-03-10T01:38:44.221+0000] {processor.py:186} INFO - Started process (PID=256) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:38:44.222+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:38:44.239+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:38:44.235+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:38:44.469+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:38:44.478+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:38:44.478+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:38:44.486+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:38:44.486+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:38:44.491+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.278 seconds
+[2026-03-10T01:39:14.696+0000] {processor.py:186} INFO - Started process (PID=258) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:39:14.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:39:14.699+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:39:14.699+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:39:14.955+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:39:14.972+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:39:14.972+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:39:14.980+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:39:14.980+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:39:14.987+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.298 seconds
+[2026-03-10T01:39:45.222+0000] {processor.py:186} INFO - Started process (PID=260) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:39:45.223+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:39:45.226+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:39:45.226+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:39:45.488+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:39:45.498+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:39:45.497+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:39:45.506+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:39:45.506+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:39:45.511+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.297 seconds
+[2026-03-10T01:40:15.670+0000] {processor.py:186} INFO - Started process (PID=262) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:40:15.672+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:40:15.682+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:40:15.681+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:40:15.967+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:40:15.978+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:40:15.977+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:40:15.992+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:40:15.992+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:40:15.999+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.340 seconds
+[2026-03-10T01:40:46.157+0000] {processor.py:186} INFO - Started process (PID=264) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:40:46.158+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:40:46.160+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:40:46.160+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:40:46.389+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:40:46.398+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:40:46.398+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:40:46.406+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:40:46.406+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:40:46.412+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.266 seconds
+[2026-03-10T01:41:16.639+0000] {processor.py:186} INFO - Started process (PID=266) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:41:16.641+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:41:16.645+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:41:16.645+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:41:16.892+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:41:16.902+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:41:16.902+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:41:16.911+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:41:16.911+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:41:16.916+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.285 seconds
+[2026-03-10T01:41:47.114+0000] {processor.py:186} INFO - Started process (PID=268) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:41:47.115+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:41:47.118+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:41:47.117+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:41:47.406+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:41:47.417+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:41:47.417+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:41:47.425+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:41:47.425+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:41:47.431+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.327 seconds
+[2026-03-10T01:42:17.644+0000] {processor.py:186} INFO - Started process (PID=270) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:42:17.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:42:17.649+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:42:17.649+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:42:17.909+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:42:17.920+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:42:17.920+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:42:17.929+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:42:17.929+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:42:17.934+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.301 seconds
+[2026-03-10T01:42:48.158+0000] {processor.py:186} INFO - Started process (PID=272) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:42:48.159+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:42:48.163+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:42:48.162+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:42:48.433+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:42:48.444+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:42:48.444+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:42:48.452+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:42:48.452+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:42:48.458+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.311 seconds
+[2026-03-10T01:43:18.543+0000] {processor.py:186} INFO - Started process (PID=274) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:43:18.544+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:43:18.546+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:43:18.546+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:43:18.797+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:43:18.807+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:43:18.807+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:43:18.816+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:43:18.816+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:43:18.821+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.285 seconds
+[2026-03-10T01:43:49.294+0000] {processor.py:186} INFO - Started process (PID=276) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:43:49.296+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:43:49.298+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:43:49.298+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:43:49.436+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:43:49.448+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:43:49.448+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:43:49.466+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:43:49.466+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:43:49.486+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.198 seconds
+[2026-03-10T01:44:19.730+0000] {processor.py:186} INFO - Started process (PID=278) to work on /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:44:19.731+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/replica_mongo_to_postgres.py for tasks to queue
+[2026-03-10T01:44:19.735+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:44:19.734+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:44:19.884+0000] {processor.py:925} INFO - DAG(s) 'replica_mongo_to_postgresql' retrieved from /opt/airflow/dags/replica_mongo_to_postgres.py
+[2026-03-10T01:44:19.896+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:44:19.896+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-10T01:44:19.906+0000] {logging_mixin.py:190} INFO - [2026-03-10T01:44:19.906+0000] {dag.py:4180} INFO - Setting next_dagrun for replica_mongo_to_postgresql to 2026-03-09 10:00:00+00:00, run_after=2026-03-10 10:00:00+00:00
+[2026-03-10T01:44:19.912+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/replica_mongo_to_postgres.py took 0.193 seconds
